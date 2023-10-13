@@ -17,7 +17,14 @@
             <td><input id="num" type="button" value="Calculate" /></td>
           </tr>
           <tr>
-            <td><input id="num" type="button" value="1" /></td>
+            <td>
+              <input
+                type="button"
+                value="1"
+                onclick="display('1')"
+                onkeydown="myFunction(event)"
+              />
+            </td>
             <td><input id="num" type="button" value="2" /></td>
             <td><input id="num" type="button" value="3" /></td>
             <td><input type="button" value="/" /></td>
@@ -34,9 +41,9 @@
             <td><input type="button" value="0" /></td>
             <td><input type="button" value="-" /></td>
           </tr>
-
         </table>
       </div>
     </div>
+    <script src="calc.js"></script>
   </body>
 </html>
