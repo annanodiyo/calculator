@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="calc.css" />
-    <script src="calc.js"></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="calculator">
-        <input type="text" id="result" />
-        <input type="button" value="Calculate" />
-
-          <table>
-          <tr>
-            <td>
-              <input type="button" value="1" onclick="display('1')"/>
-            </td>
-            <td><input id="num" type="button" value="2" onclick="display('2')"/></td>
-            <td><input id="num" type="button" value="3" onclick="display('3')"/></td>
-            <td><input type="button" value="/" onclick="display('/')" /></td>
-          </tr>
-          <tr>
-            <td><input type="button" value="5" /></td>
-            <td><input type="button" value="6" /></td>
-            <td><input type="button" value="7" /></td>
-            <td><input type="button" value="+" /></td>
-          </tr>
-          <tr>
-            <td><input type="button" value="8" /></td>
-            <td><input type="button" value="9" /></td>
-            <td><input type="button" value="0" /></td>
-            <td><input type="button" value="-" /></td>
-          </tr>
-        </table>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calc.css">
+  <title>My Calculator</title>
+</head>
+<body>
+  <div class="calculator">
+    <div class="calculator_display">
+      <input type="text" name="Ans" id="display">
+      <button onclick="clear()">Ac</button>
     </div>
-
-  </body>
-
+    <div class="calculator_keys">
+      <button onclick="display('*')">*</button>
+      <button onclick="display('÷')">/</button>
+      <button onclick="display('+')">+</button>
+      <button onclick="display('-')">-</button>
+      <button onclick="display(1)">1</button>
+      <button onclick="display(2)">2</button>
+      <button onclick="display(3)">3</button>
+      <button onclick="display(4)">4</button>
+      <button onclick="display(5)">5</button>
+      <button onclick="display(6)">6</button>
+      <button onclick="display(7)">7</button>
+      <button onclick="display(8)">8</button>
+      <button onclick="display(9)">9</button>
+      <button onclick="display('.')" >.</button>
+      <button>0</button>
+      <button onclick="calculate()">=</button>
+    </div>
+  </div>
+  <script src="calc.js"></script>
+</body>
 </html>
