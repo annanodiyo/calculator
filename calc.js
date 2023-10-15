@@ -8,6 +8,6 @@ function calculate(){
     document.getElementById('display').value = y;
     return y;
 }
-function clear(){
+function clearDisplay(){
     document.getElementById('display').value = "";
 }

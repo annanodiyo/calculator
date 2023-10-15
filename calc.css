@@ -10,12 +10,13 @@ body{
     /* flex-direction: column; */
 }
 .calculator{
-    width: 60vw;
+    max-width: 30vw;
     height: 80vh;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
     border-radius: 20px;
+    /* cursor: pointer; */
     /* justify-content: center; */
     background-color: antiquewhite;
     /* align-items: center; */
@@ -25,7 +26,6 @@ body{
     justify-content: center;
     height: 40px;
     width: 90%;
-    background-color: aquamarine;
     margin-top: 40px;
     font-size: 20px;
     overflow-x: hidden;
@@ -33,6 +33,10 @@ body{
 }
 .calculator_display > button{
     width: 40px;
+    cursor: pointer;
+}
+.calculator_display>button:hover{
+    background-color: green;
 }
 .calculator_keys{
     margin-left: 30px;
@@ -42,4 +46,8 @@ body{
     height: 30px;
     margin-top: 10px;
     margin-right: 5px;
+    cursor: pointer;
+}
+.calculator_keys > button:hover{
+    background-color: brown;
 }
