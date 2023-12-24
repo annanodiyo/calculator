@@ -1,53 +1,94 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: blueviolet;
+
+body {
+    background-color: #3a4764;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
 }
-.calculator{
-    max-width: 30vw;
-    height: 80vh;
+
+.heading {
+    color: white;
+    font: bold;
+}
+
+.calculator {
+    max-width: 60vw;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    border-radius: 20px;
-    /* cursor: pointer; */
-    /* justify-content: center; */
-    background-color: antiquewhite;
-    /* align-items: center; */
+    padding: 20px;
+
 }
-.calculator_display{
+
+.calculator_display {
     display: flex;
     justify-content: center;
-    height: 40px;
-    width: 90%;
-    margin-top: 40px;
+    width: 100%;
+    /* margin-top: 40px; */
     font-size: 20px;
     overflow-x: hidden;
     margin-bottom: 20px;
 }
-.calculator_display > button{
+
+.calculator_display>button {
     width: 40px;
     cursor: pointer;
 }
-.calculator_display>button:hover{
-    background-color: green;
+
+#display {
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    height: 47px;
+    background-color: #182034;
+    color:white;
+
 }
-.calculator_keys{
-    margin-left: 30px;
+
+.calculator_keys {
+    width: 90%;
+    background-color: #232c43;
+    padding: 10px;
+    border-radius: 5px;
 }
-.calculator_keys > button{
-    width: 50px;
-    height: 30px;
+
+.calculator_keys>button {
+    width: 20%;
+    height: 55px;
     margin-top: 10px;
-    margin-right: 5px;
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 8px;
     cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 6px 2px -2px gray;
 }
-.calculator_keys > button:hover{
+
+.calculator_keys>button:hover {
     background-color: brown;
+}
+
+.reset,
+.delete {
+    width: 44%;
+    height: 43px;
+    margin-top: 10px;
+    font-weight: bolder;
+    margin-left: 8px;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 6px 2px -2px gray;
+}
+
+.reset {
+    background-color: #637097;
+}
+
+.delete {
+    background-color: #d03f2f;
 }
