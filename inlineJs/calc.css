@@ -40,7 +40,7 @@ body {
     cursor: pointer;
 }
 
-#display {
+.display {
     width: 100%;
     border-radius: 8px;
     padding: 10px;
@@ -65,30 +65,31 @@ body {
     font-size: larger;
     margin-left: 8px;
     cursor: pointer;
+    border: 0;
     border-radius: 4px;
-    box-shadow: 0 6px 2px -2px gray;
+    box-shadow: 0 6px 2px -2px gray, 0 6px 2px -2px gray;
 }
 
-.calculator_keys>button:hover {
-    background-color: brown;
-}
-
-.reset,
-.delete {
-    width: 44%;
-    height: 43px;
+.calculator_keys>input {
+    width: 20%;
+    height: 55px;
     margin-top: 10px;
     font-weight: bolder;
+    font-size: larger;
     margin-left: 8px;
-    color: white;
+    cursor: pointer;
+    border: 0;
     border-radius: 4px;
-    box-shadow: 0 6px 2px -2px gray;
+    box-shadow: 0 6px 2px -2px gray, 0 6px 2px -2px gray;
 }
 
-.reset {
+
+.operators{
     background-color: #637097;
+    color: white;
 }
-
-.delete {
-    background-color: #d03f2f;
+.equal{
+min-width: 44%;
+color: white;
+background-color: #d03f2f;
 }
